@@ -10,8 +10,8 @@ from datetime import datetime, timedelta
 from collections import deque
 import json
 import smtplib
-from email.mime.text import MimeText
-from email.mime.multipart import MimeMultipart
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from .config import config
 from .risk_management import risk_manager
 
@@ -137,7 +137,7 @@ class PerformanceMonitor:
             self._check_trade_alerts(trade_metrics)
             
             logger.info(f"Trade result recorded: PnL {pnl:.2f}, "
-                       f"Win rate: {self.get_win_rate():.1%}")
+                       f"Win rate: {self.winning_trades / max(self.total_trades, 1):.1%}")
             
         except Exception as e:
             logger.error(f"Error adding trade result: {e}")
@@ -232,7 +232,7 @@ class PerformanceMonitor:
                 return
             
             # Create message
-            msg = MimeMultipart()
+            msg = MIMEMultipart()
             msg['From'] = email_user
             msg['To'] = email_to
             msg['Subject'] = f"Trading System Alert: {alert_type}"
@@ -248,7 +248,7 @@ class PerformanceMonitor:
             {self._get_performance_summary()}
             """
             
-            msg.attach(MimeText(body, 'plain'))
+            msg.attach(MIMEText(body, 'plain'))
             
             # Send email
             server = smtplib.SMTP(smtp_server, smtp_port)

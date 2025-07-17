@@ -148,7 +148,7 @@ class RiskManager:
         
         # Daily loss limit
         max_daily_loss = config.get('risk_management.max_daily_loss', 0.05)
-        if self.daily_pnl < -max_daily_loss * self.account_balance:
+        if self.daily_pnl < -max_daily_loss * float(self.account_balance):
             logger.warning("Daily loss limit reached, no new positions")
             return 0
         
@@ -286,7 +286,7 @@ class RiskManager:
         try:
             # Daily loss limit
             max_daily_loss = config.get('risk_management.max_daily_loss', 0.05)
-            if self.daily_pnl < -max_daily_loss * self.account_balance:
+            if self.daily_pnl < -max_daily_loss * float(self.account_balance):
                 return False, "Daily loss limit exceeded"
             
             # Maximum drawdown

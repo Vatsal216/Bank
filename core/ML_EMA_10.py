@@ -188,7 +188,7 @@ class FeatureEngineer:
             bb_std_val = data['close'].rolling(bb_period).std()
             data['bb_upper'] = bb_mean + (bb_std_val * bb_std)
             data['bb_lower'] = bb_mean - (bb_std_val * bb_std)
-            data['bb_position'] = (data['close'] - bb_lower) / (data['bb_upper'] - data['bb_lower'])
+            data['bb_position'] = (data['close'] - data['bb_lower']) / (data['bb_upper'] - data['bb_lower'])
             
             # MACD
             macd_fast = config.get('indicators.macd_fast', 12)
