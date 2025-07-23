@@ -1,0 +1,77 @@
+2025-07-17 09:22:17,238 - core.config - INFO - Configuration updated: risk_management.max_position_size = 0.025
+2025-07-17 09:22:17,239 - core.config - INFO - Configuration validation passed
+2025-07-17 09:22:17,239 - core.config - INFO - Configuration updated: risk_management.max_position_size = 0.5
+2025-07-17 09:22:17,239 - core.config - ERROR - Configuration validation failed: Invalid max_position_size: 0.5
+2025-07-17 09:22:17,239 - core.risk_management - INFO - Kelly position size: 0.0200 (raw Kelly: 0.3000)
+2025-07-17 09:22:17,239 - core.risk_management - INFO - Kelly position size: 0.0200 (raw Kelly: 0.1667)
+2025-07-17 09:22:17,239 - core.risk_management - ERROR - Error calculating position size: unsupported operand type(s) for *: 'float' and 'decimal.Decimal'
+2025-07-17 09:22:17,239 - core.risk_management - INFO - Stop loss calculated: 1.09800 (20.0 pips from 1.10000)
+2025-07-17 09:22:17,240 - core.risk_management - INFO - Take profit calculated: 1.10400 (RR ratio: 2.0)
+2025-07-17 09:22:17,240 - core.risk_management - ERROR - Error checking trading status: unsupported operand type(s) for *: 'float' and 'decimal.Decimal'
+2025-07-17 09:22:17,245 - core.ML_EMA_10 - WARNING - Low data quality score: 0.38
+2025-07-17 09:22:17,245 - core.ML_EMA_10 - INFO - Data cleaned: 50 -> 19 bars (quality: 0.38)
+2025-07-17 09:22:17,250 - core.ML_EMA_10 - WARNING - Low data quality score: 0.37
+2025-07-17 09:22:17,250 - core.ML_EMA_10 - INFO - Data cleaned: 100 -> 37 bars (quality: 0.37)
+2025-07-17 09:22:17,250 - core.ML_EMA_10 - INFO - Retrieved 37 bars for EURUSD M5
+2025-07-17 09:22:17,257 - core.ML_EMA_10 - ERROR - Error creating features: name 'bb_lower' is not defined
+2025-07-17 09:22:17,264 - core.ML_EMA_10 - ERROR - Error creating features: name 'bb_lower' is not defined
+2025-07-17 09:22:17,774 - core.ML_EMA_10 - INFO - Model rf CV score: 0.509
+2025-07-17 09:22:18,198 - core.ML_EMA_10 - INFO - Model gb CV score: 0.497
+2025-07-17 09:22:18,325 - core.ML_EMA_10 - INFO - Model trained successfully. Best score: 0.509
+2025-07-17 09:22:18,839 - core.ML_EMA_10 - INFO - Model rf CV score: 0.509
+2025-07-17 09:22:19,264 - core.ML_EMA_10 - INFO - Model gb CV score: 0.497
+2025-07-17 09:22:19,391 - core.ML_EMA_10 - INFO - Model trained successfully. Best score: 0.509
+2025-07-17 09:22:19,898 - core.ML_EMA_10 - INFO - Model rf CV score: 0.509
+2025-07-17 09:22:20,322 - core.ML_EMA_10 - INFO - Model gb CV score: 0.497
+2025-07-17 09:22:20,449 - core.ML_EMA_10 - INFO - Model trained successfully. Best score: 0.509
+2025-07-17 09:22:20,452 - core.ML_EMA_10 - INFO - Retraining ML model...
+2025-07-17 09:22:20,453 - core.ML_EMA_10 - INFO - Prepared training data: 200 samples, 9 features
+2025-07-17 09:22:20,918 - core.ML_EMA_10 - INFO - Model rf CV score: 0.624
+2025-07-17 09:22:21,214 - core.ML_EMA_10 - INFO - Model gb CV score: 0.667
+2025-07-17 09:22:21,282 - core.ML_EMA_10 - INFO - Model trained successfully. Best score: 0.667
+2025-07-17 09:22:21,282 - core.ML_EMA_10 - INFO - Model retrained with CV scores: {'rf': np.float64(0.6242424242424243), 'gb': np.float64(0.6666666666666666)}
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:22:21,286 - core.monitoring - ERROR - Error adding trade result: 'PerformanceMonitor' object has no attribute 'get_win_rate'
+2025-07-17 09:24:55,053 - core.config - INFO - Configuration updated: trading.symbol = GBPUSD
+2025-07-17 09:24:55,054 - core.config - INFO - Configuration updated: risk_management.max_position_size = 0.015
+2025-07-17 09:24:55,054 - core.config - INFO - Configuration validation passed
+2025-07-17 09:24:55,054 - core.risk_management - INFO - Kelly position size: 0.0150 (raw Kelly: 0.4400)
+2025-07-17 09:24:55,054 - core.risk_management - INFO - Kelly position size: 0.0150 (raw Kelly: 0.1667)
+2025-07-17 09:24:55,054 - core.risk_management - INFO - Position size: 0.0115 (Kelly: 0.0150, Signal: 0.90, Vol: 0.85)
+2025-07-17 09:24:55,054 - core.risk_management - INFO - Stop loss calculated: 1.24700 (30.0 pips from 1.25000)
+2025-07-17 09:24:55,054 - core.risk_management - INFO - Take profit calculated: 1.25600 (RR ratio: 2.0)
+2025-07-17 09:24:55,061 - core.ML_EMA_10 - WARNING - Low data quality score: 0.38
+2025-07-17 09:24:55,061 - core.ML_EMA_10 - INFO - Data cleaned: 200 -> 75 bars (quality: 0.38)
+2025-07-17 09:24:55,061 - core.ML_EMA_10 - INFO - Retrieved 75 bars for GBPUSD M5
+2025-07-17 09:24:55,078 - core.ML_EMA_10 - INFO - Selected 23 stable features (removed 5 correlated)
+2025-07-17 09:24:55,079 - core.ML_EMA_10 - INFO - Created 28 features from 75 bars
+2025-07-17 09:24:55,084 - core.ML_EMA_10 - WARNING - Low data quality score: 0.38
+2025-07-17 09:24:55,084 - core.ML_EMA_10 - INFO - Data cleaned: 200 -> 75 bars (quality: 0.38)
+2025-07-17 09:24:55,085 - core.ML_EMA_10 - INFO - Retrieved 75 bars for GBPUSD M5
+2025-07-17 09:24:55,100 - core.ML_EMA_10 - INFO - Selected 23 stable features (removed 5 correlated)
+2025-07-17 09:24:55,101 - core.ML_EMA_10 - INFO - Created 28 features from 75 bars
+2025-07-17 09:24:55,101 - core.monitoring - INFO - Trade result recorded: PnL 25.50, Win rate: 100.0%
+2025-07-17 09:24:55,101 - core.risk_management - INFO - Trade result added: PnL 1.50%, Daily PnL: 25.5
+2025-07-17 09:24:55,101 - core.monitoring - INFO - Trade result recorded: PnL -12.30, Win rate: 50.0%
+2025-07-17 09:24:55,101 - core.risk_management - INFO - Trade result added: PnL -0.80%, Daily PnL: 13.2
+2025-07-17 09:24:55,101 - core.monitoring - INFO - Trade result recorded: PnL 18.75, Win rate: 66.7%
+2025-07-17 09:24:55,101 - core.risk_management - INFO - Trade result added: PnL 1.20%, Daily PnL: 31.95
+2025-07-17 09:24:55,101 - core.monitoring - INFO - Trade result recorded: PnL 31.20, Win rate: 75.0%
+2025-07-17 09:24:55,101 - core.risk_management - INFO - Trade result added: PnL 1.80%, Daily PnL: 63.15
+2025-07-17 09:24:55,102 - core.monitoring - INFO - Trade result recorded: PnL -8.40, Win rate: 60.0%
+2025-07-17 09:24:55,102 - core.risk_management - INFO - Trade result added: PnL -0.50%, Daily PnL: 54.75
+2025-07-17 09:24:55,102 - core.config - INFO - Configuration updated: risk_management.max_position_size = 0.01
+2025-07-17 09:24:55,102 - core.config - INFO - Configuration updated: trading.stop_loss_pips = 30
+2025-07-17 09:24:55,102 - core.config - INFO - Configuration updated: signals.min_signal_strength = 0.5
+2025-07-17 09:24:55,102 - core.config - INFO - Adaptive parameters updated based on market conditions
+2025-07-17 09:24:55,103 - core.monitoring - INFO - Performance monitoring started
+2025-07-17 09:24:55,103 - core.ML_EMA_10 - INFO - ML Trading System initialized
